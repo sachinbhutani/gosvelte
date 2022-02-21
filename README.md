@@ -30,13 +30,13 @@ go run go/server.go
 
 # Nuts and Bolts 
 GoFiber can be used to render static html pages with javascript code 
-As svelte is combined to pure js,  JS build with svelte can be server directly on a static go server 
+As svelte is combined to pure js, JS build with svelte can be served directly on a static go server 
 
 ### Passing Props
 
-With static served svelte pages, and data from backend needs to be requested using 'fetch' which needs an additional round-trip from client to server. 
+With static served svelte pages, any data from backend needs to be requested using 'fetch' which needs an additional round-trip from client to server. 
 
-Fiber allows to render HTML templates with data from the backend, this data can be passed on to the svelte components and hydrated on the client side. passing props during html page rendering, saves the additional trip round-trip to the server for fetching props. 
+Fiber allows to render HTML templates with data from the backend, this data can be passed on to the svelte components and hydrated on the client side. passing props during html page rendering, saves the additional round-trip to the server for fetching props. 
 
 # Need an official Svelte framework?
 
